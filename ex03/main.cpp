@@ -8,7 +8,6 @@ int main(void)
 	Point *c = new Point(1, 4);
 	Point *point = new Point(3, 3);
 
-	//printf("coordinates : a(%i,%i) b(%i,%i), c(%i,%i)", a.getX().toInt(), a.getY().toInt(), b.getX().toInt(), b.getY().toInt(), c.getX().toInt(), c.getY().toInt());
 	bool res = bsp(a, b, c, point);
 	std::cout << "Res is: " << res << std::endl;
 	delete point;
