@@ -7,9 +7,9 @@ class Fixed {
 		Fixed(const int nbr);
 		Fixed(const Fixed &cpy);
 		Fixed(const float nbr);	
-
 		Fixed &operator=(const Fixed &cpy);
 		~Fixed();
+
 		float toFloat() const;
 		int toInt() const;
 	private:

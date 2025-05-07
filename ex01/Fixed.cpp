@@ -27,7 +27,7 @@ Fixed::Fixed(const Fixed &cpy)
 	*this = cpy;
 }
 
-Fixed &Fixed::operator= (const Fixed &cpy)
+Fixed &Fixed::operator=(const Fixed &cpy)
 {
 	std::cout << "Copy assignement operator called" << std::endl;
 	if (&cpy != this)
