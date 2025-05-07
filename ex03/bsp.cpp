@@ -6,7 +6,7 @@
 /*   By: togauthi <togauthi@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 12:58:37 by togauthi          #+#    #+#             */
-/*   Updated: 2025/05/01 13:09:41 by togauthi         ###   ########.fr       */
+/*   Updated: 2025/05/07 10:12:10 by togauthi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ bool bsp(Point const *a, Point const *b, Point const *c, Point const *point)
 
 	std::cout << "al " << al << " be is " << be << " ce is " << ce << std::endl;
 
-	return (al > 0 && be > 0 && ce > 0);
+	return (al >= 0 && be >= 0 && ce >= 0);
 
 }
