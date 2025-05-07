@@ -12,4 +12,13 @@ int main(void)
 	//printf("coordinates : a(%i,%i) b(%i,%i), c(%i,%i)", a.getX().toInt(), a.getY().toInt(), b.getX().toInt(), b.getY().toInt(), c.getX().toInt(), c.getY().toInt());
 	bool res = bsp(a, b, c, point);
 	std::cout << "Res is: " << res << std::endl;
+	delete point;
+	point = new Point(2.5, 2.5);
+	res = bsp(a, b, c, point);
+	std::cout << "Res 2 is: " << res << std::endl;
+	
+	delete a;
+	delete b;
+	delete c;
+	delete point;
 }
