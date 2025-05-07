@@ -1,6 +1,5 @@
 #include "Point.hpp"
 #include <iostream>
-#include <stdio.h>
 
 int main(void)
 {
@@ -13,10 +12,16 @@ int main(void)
 	bool res = bsp(a, b, c, point);
 	std::cout << "Res is: " << res << std::endl;
 	delete point;
+	
 	point = new Point(2.5, 2.5);
 	res = bsp(a, b, c, point);
 	std::cout << "Res 2 is: " << res << std::endl;
-	
+
+	delete point;
+	point = new Point(1, 1);
+	res = bsp(a, b, c, point);
+	std::cout << "Res 3 is: " << res << std::endl;
+
 	delete a;
 	delete b;
 	delete c;
