@@ -1,5 +1,4 @@
 #include "Fixed.hpp"
-#include <algorithm>
 #include <iostream>
 #include <ostream>
 #include <cmath>
@@ -105,14 +104,12 @@ float Fixed::operator*(const Fixed &toAdd) const
 
 Fixed &Fixed::operator++()
 {
-	// this->value = (this->toFloat() + 1) * (1 << this->raw_bits) ;
 	this->value ++;
 	return (*this);
 }
 
 Fixed &Fixed::operator--()
 {
-	// this->value = (this->toFloat() - 1) * (1 << this->raw_bits);
 	this->value --;
 	return (*this);
 }
@@ -120,16 +117,14 @@ Fixed &Fixed::operator--()
 Fixed Fixed::operator++(int)
 {
 	Fixed tmp = *this;
-	tmp.value ++;
-	// this->value = (this->toFloat() + 1) * (1 << this->raw_bits);
+	this->value ++;
 	return (tmp);
 }
 
 Fixed Fixed::operator--(int)
 {
 	Fixed tmp = *this;
-	tmp.value --;
-	// this->value = (this->toFloat() - 1) * (1 << this->raw_bits);
+	this->value--;
 	return (tmp);
 }
 
